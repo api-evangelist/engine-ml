@@ -1,24 +1,67 @@
 aid: engine-ml
 name: Engine ML
-description: 'Engine ML is a company surfaced as a portfolio company of kleiner-perkins and added to the
-  API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Engine ML was a machine-learning infrastructure startup (founded 2018, backed
+  by Kleiner Perkins) that offered a hosted platform for distributed model
+  training and experiment tracking. Its product surface centered on the `engine`
+  command-line tool and the `eml` Python library, which let data scientists
+  launch experiments, track code, system utilization, logs, and output files,
+  and run image classifiers (PyTorch/TensorFlow/Keras) against datasets such as
+  MNIST. The company appears to be defunct: engineml.com serves an empty page
+  behind an expired TLS certificate (expired March 2023), the documentation site
+  docs.engineml.com returns an empty S3 bucket, and the public GitHub
+  organization (EngineML) has not been updated since 2020-2021. No live API,
+  OpenAPI description, package-registry release, or reachable developer docs
+  could be found. This profile preserves the historical identity and the still-
+  live GitHub organization as the only verifiable surviving surface.
 url: https://raw.githubusercontent.com/api-evangelist/engine-ml/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/43284809?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - kleiner-perkins
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-evidence: engineml.com TLS cert expired 2023-03-28; docs.engineml.com S3 NoSuchKey; GitHub org last updated 2021-01
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Ai
+- Machine Learning
+- MLOps
+- Experiment Tracking
+- Distributed Training
+- Developer Tools
+- Defunct
+common:
+- type: DomainSecurity
+  url: security/engine-ml-domain-security.yml
+- type: GitHubOrganization
+  url: https://github.com/EngineML
+- type: Website
+  url: https://engineml.com
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
