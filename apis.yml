@@ -52,7 +52,7 @@ modified: '2026-07-19'
 tags:
 - Company
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - MLOps
 - Experiment Tracking
 - Distributed Training
@@ -67,6 +67,7 @@ tags_raw:
 - Distributed Training
 - Developer Tools
 - Defunct
+- Machine-Learning
 common:
 - type: DomainSecurity
   url: security/engine-ml-domain-security.yml
